@@ -10,7 +10,7 @@ export const Descripcion = () => {
   const [sectionRef, inView] = useInView({ threshold: 0.2, once: true });
 
   return (
-    <section className="conoceme container" ref={sectionRef}>
+    <section className="conoceme container-lg" ref={sectionRef}>
       <article className={`slide-from-left mb-5 ${inView ? 'in-view' : ''}`}>
         <p>
           Soy <span>educadora social</span> de formación, con experiencia en el
@@ -57,7 +57,7 @@ export const Descripcion = () => {
             </ul>
           </div>
 
-          <div className="d-flex gap-3">
+          <div className="d-flex flex-column flex-md-row gap-3">
             <p>
               <AiOutlineCheck /> Incorporación inmediata
             </p>

@@ -1,19 +1,16 @@
 .card-experienciaIndv {
   background: #ffffff;
   border-radius: 1.2rem;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.05);
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 400px;
-  margin-top: 2rem;
   cursor: pointer;
   border: none;
 }
 
-
 .card-experienciaIndv:hover {
   transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15), 0 8px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.15), 0 8px 18px rgba(0,0,0,0.08);
 }
 
 .card-experienciaIndv .card-body {
@@ -24,7 +21,7 @@
 
 .card-experienciaIndv .card-title {
   font-weight: 700;
-  color: rgba(0, 0, 0, 0.717);
+  color: rgba(0,0,0,0.717);
   font-size: 1.4rem;
 }
 
@@ -59,9 +56,62 @@
   margin-left: -1em;
 }
 
-.card-experienciaIndv a {
-  .card-experiencia .card-text {
-    color: rgba(0, 0, 0, 0.717);
-    line-height: 1.6;
+/* Slider móvil */
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider-card-wrapper {}
+
+.card-experienciaIndv.inactive {
+  display: none;
+}
+
+.slider-arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #f94a29;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .desktop-cards {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .slider-arrows,
+  .slider-dots {
+    display: none;
+  }
+
+  .card-experienciaIndv {
+    display: block;
+    width: 100%;
   }
 }

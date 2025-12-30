@@ -36,3 +36,12 @@ a{
 }
 
 
+.card-experiencia {
+  max-width: 350px;
+}
+
+@media (max-width: 768px) {
+  .card-experiencia {
+    max-width: 100%;
+  }
+}

@@ -15,7 +15,7 @@
   border-color: transparent;
   border-radius: 12px;
   padding: 1rem;
-    &:hover {
+  &:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px #5a5958;
   }
@@ -33,16 +33,18 @@ h5 {
   border-color: transparent;
   border-radius: 12px;
   padding: 1rem;
-    &:hover {
+  &:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 20px #5a5958;
   }
-
 }
 
 @media (width <= 768px) {
-  .habilidades,.cualidades  {
+  .habilidades,
+  .cualidades,
+  .conoceme {
     width: 100%;
+    padding-inline: 2rem;
   }
 }
 

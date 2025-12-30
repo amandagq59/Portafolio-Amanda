@@ -58,35 +58,34 @@ export const Formacion = () => {
     </div>
 
     {/* Card 4 */}
-    <Col className='d-flex justify-content-center gap-5'>
-      <div className="col-md-6 col-lg-4 ">
-        <Card className="card-formacion-profesional text-center">
-          <Card.Body>
-            <div className="orden">4</div>
-            <Card.Title>Certificado Internacional en Prevención de la Violencia de Género y Educación Emocional</Card.Title>
-            <Card.Subtitle className="mb-1 text-muted">ESNECA Business School</Card.Subtitle>
-            <Card.Subtitle className="mb-2 text-muted">2020-2021</Card.Subtitle>
-            <Card.Text className="text-muted">
-              Capacitación en prevención, sensibilización y educación emocional aplicada a la igualdad y la protección frente a la violencia de género.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-      {/* Card 5 */}
-      <div className="col-md-6 col-lg-4">
-        <Card className="card-formacion-profesional text-center">
-          <Card.Body>
-            <div className="orden">5</div>
-            <Card.Title>Ciclo Formativo Superior de Animación Sociocultural</Card.Title>
-            <Card.Subtitle className="mb-1 text-muted">Instituto Ben Gabirol</Card.Subtitle>
-            <Card.Subtitle className="mb-2 text-muted">2014-2016</Card.Subtitle>
-            <Card.Text className="text-muted">
-              Formación en diseño y gestión de actividades educativas, culturales y recreativas que fomentan la participación, la cohesión social y el desarrollo comunitario.
-            </Card.Text>
-          </Card.Body>
-        </Card>
-      </div>
-    </Col>
+    <div className="col-md-6 col-lg-4">
+      <Card className="card-formacion-profesional text-center">
+        <Card.Body>
+          <div className="orden">4</div>
+          <Card.Title>Certificado Internacional en Prevención de la Violencia de Género y Educación Emocional</Card.Title>
+          <Card.Subtitle className="mb-1 text-muted">ESNECA Business School</Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted">2020-2021</Card.Subtitle>
+          <Card.Text className="text-muted">
+            Capacitación en prevención, sensibilización y educación emocional aplicada a la igualdad y la protección frente a la violencia de género.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
+
+    {/* Card 5 */}
+    <div className="col-md-6 col-lg-4">
+      <Card className="card-formacion-profesional text-center">
+        <Card.Body>
+          <div className="orden">5</div>
+          <Card.Title>Ciclo Formativo Superior de Animación Sociocultural</Card.Title>
+          <Card.Subtitle className="mb-1 text-muted">Instituto Ben Gabirol</Card.Subtitle>
+          <Card.Subtitle className="mb-2 text-muted">2014-2016</Card.Subtitle>
+          <Card.Text className="text-muted">
+            Formación en diseño y gestión de actividades educativas, culturales y recreativas que fomentan la participación, la cohesión social y el desarrollo comunitario.
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
 
   </div>
 </section>

@@ -51,7 +51,10 @@ export const CardMeraki = () => {
               GitHub ↗
             </a>
 
-            <a href="meraki.mkv" download>
+            <a
+              href="https://youtu.be/vY6RCUfzBWo?si=0LtJnIicSDGdPXoO"
+              target="_blank"
+            >
               Video ↗
             </a>
           </div>

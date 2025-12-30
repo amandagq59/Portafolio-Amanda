@@ -2,131 +2,133 @@
   background-color: #fafafa;
 
   .linea-lateral-amarillo {
-     width: min(1140px, 100%);
+    width: min(1140px, 100%);
     height: 10px;
     border-bottom-left-radius: 20px;
     background-color: #fce22a;
     margin-top: 10px;
     margin-left: auto;
     margin-bottom: 5rem;
-    
   }
-.project-card {
-  border-color: transparent;
-  box-shadow: 0 1px 5px #bdbcbc;
-  border-radius: 16px;
-  background-color: #ffffff;
-  padding: 6px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+  .project-card {
+    border-color: transparent;
+    box-shadow: 0 1px 5px #bdbcbc;
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 6px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
 
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-}
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  }
 
-/* Header */
-.project-title {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #111827;
-  margin: 0;
-}
+  /* Header */
+  .project-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #111827;
+    margin: 0;
+  }
 
-.project-badge {
-  font-size: 0.65rem;
-  font-weight: 600;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background-color: #f3f4f6;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-}
+  .project-badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: #f3f4f6;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+  }
 
-/* Texto */
-.project-subtitle {
-  font-size: 0.8rem;
-  color: #6b7280;
-  margin-bottom: 10px;
-}
+  /* Texto */
+  .project-subtitle {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
 
-.project-description {
-  font-size: 0.85rem;
-  color: #4b5563;
-  margin-bottom: 14px;
-  line-height: 1.5;
-}
-.project-image-wrapper {
-  height: 200px; /* Ajusta según el tamaño que quieras */
-  overflow: hidden;
-}
+  .project-description {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .project-image-wrapper {
+    height: 200px; /* Ajusta según el tamaño que quieras */
+    overflow: hidden;
+  }
 
+  .project-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-.project-image-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  /* Features */
+  .project-features {
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
+    color: #4b5563;
+  }
 
+  .project-features li {
+    margin-bottom: 6px;
+  }
 
-/* Features */
-.project-features {
-  padding-left: 16px;
-  margin-bottom: 16px;
-  font-size: 0.8rem;
-  color: #4b5563;
-}
+  /* Tags */
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
 
-.project-features li {
-  margin-bottom: 6px;
-}
+  .project-tags span {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background-color: #f9fafb;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+  }
 
-/* Tags */
-.project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
-}
+  /* Links */
+  .project-links {
+    display: flex;
+    gap: 16px;
+  }
 
-.project-tags span {
-  font-size: 0.7rem;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background-color: #f9fafb;
-  color: #374151;
-  border: 1px solid #e5e7eb;
-}
+  .project-links a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #111827;
+    text-decoration: none;
+  }
 
-/* Links */
-.project-links {
-  display: flex;
-  gap: 16px;
-}
+  .project-links a:hover {
+    text-decoration: underline;
+  }
 
-.project-links a {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #111827;
-  text-decoration: none;
-}
-
-.project-links a:hover {
-  text-decoration: underline;
-}
-
-.changeColor {
-  padding: 0.5rem 1rem;
-  color: white;
-  background-color: #000000b0;
-  border-radius: 16px;
-  border: none;
-}
- .buttonColor{
+  .changeColor {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #000000b0;
+    border-radius: 16px;
+    border: none;
+  }
+  .buttonColor {
     padding: 0.5rem 1rem;
     color: white;
     background-color: #f94a29;
     border-radius: 16px;
     border: none;
+  }
+  @media (max-width: 768px) {
+    .linea-lateral-amarillo {
+      border-bottom-left-radius: 0;
+    }
   }
 }

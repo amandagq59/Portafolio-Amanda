@@ -11,7 +11,7 @@ import { Experiencia } from '../components/sobreMi/experiencia/Experiencia';
 export const SobreMiSections = () => {
   const [section, setSection] = useState(1);
   return (
-    <section className="section-sobreMi d-flex flex-column py-4" id='conoceme'>
+    <section className="section-sobreMi d-flex flex-column py-lg-4" id='conoceme'>
       <h3 className='text-center mt-5'>Conóceme</h3>
       <div className='linea-lateral-naranja'></div>
       <div className="d-flex flex-wrap justify-content-center gap-3 gap-md-5 mt-5 px-3">

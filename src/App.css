@@ -20,7 +20,7 @@ body.dark-mode .linea-lateral-azul,
 body.dark-mode .linea-lateral-amarillo,
 body.dark-mode .linea-lateral-rosa,
 body.dark-mode .linea-lateral-naranja {
-  background-color: #2dd4bf;
+  background-color: rgba(77, 105, 79, 0.452);
 }
 
 body.dark-mode footer,
@@ -43,12 +43,12 @@ body.dark-mode section.conoceme {
   color: #e8ecf5;
 
   h2 {
-    color: #e8ecf5;
-    text-shadow: none;
+    color: rgb(77, 105, 79);
+ 
   }
 
   .buttonColor {
-    background-color: #2dd4bf;
+    background-color: rgba(77, 105, 79, 0.452);
   }
   .changeColor {
     background-color: #1f2937;
@@ -58,6 +58,7 @@ body.dark-mode section.conoceme {
   }
   .card-formacion-profesional::before,
   .card-formacion-profesional-end::before {
+
     background: none;
   }
   .span4 {
@@ -70,21 +71,23 @@ body.dark-mode section.conoceme {
   }
 }
 body.dark-mode .card-experiencia .card-title,
+body.dark-mode .card-experiencia .card-text
 body.dark-mode .flecha-experiencia {
   color: #e8ecf5;
 }
 
 .dark-mode .section-portada svg .naranja {
-  fill: #fdba74;
+  fill: rgba(128, 128, 128, 0.308);
 }
 .dark-mode .section-portada svg .amarillo {
-  fill: #fde047;
+  fill: rgba(77, 105, 79, 0.452);
 }
 .dark-mode .section-portada svg .rosa {
-  fill: #d8b4fe;
+  fill:  rgba(128, 128, 128, 0.308);
 }
 .dark-mode .section-portada svg .azul {
-  fill: #7dd3fc;
+  fill: rgba(77, 105, 79, 0.452);
+
 }
 
 /* Portada (modo claro) */
@@ -115,6 +118,7 @@ body.dark-mode .flecha-experiencia {
 .dark-mode .project-card .card-body {
   background-color: #1b253b;
   color: #e8ecf5;
+  border:none;
 
   .dark-mode .project-card {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
@@ -127,6 +131,8 @@ body.dark-mode .flecha-experiencia {
 .dark-mode .project-card .project-features li {
   color: #dfe7f4;
 }
+
+
 
 body.dark-mode .btn-outline-primary:hover {
   background-color: #2dd4bf;

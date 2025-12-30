@@ -1,74 +1,116 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../Navbar/navbar.css';
-
-import { FaMoon } from 'react-icons/fa6';
+import { FaMoon, FaPlay, FaPause, FaBars, FaTimes } from 'react-icons/fa';
 import { MdSunny } from 'react-icons/md';
-import { useRef, useState } from 'react';
-import { FaPlay, FaPause } from 'react-icons/fa';
 import { IoMusicalNotes } from 'react-icons/io5';
 
 export const Navbar = ({ darkMode, toggleDarkMode }) => {
-  const audioRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(() => {
     return localStorage.getItem('isPlaying') === 'true';
   });
+  const audioRef = useRef(null);
 
   const toggleMusic = () => {
-    if (!isPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
+    if (!isPlaying) audioRef.current.play();
+    else audioRef.current.pause();
     setIsPlaying((prev) => {
       localStorage.setItem('isPlaying', !prev);
       return !prev;
     });
   };
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   useEffect(() => {
     if (isPlaying && audioRef.current) {
       const playPromise = audioRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.catch((error) => {
-          console.log('Autoplay bloqueado por el navegador', error);
-        });
-      }
+      if (playPromise !== undefined) playPromise.catch(() => {});
     }
+    return () => {
+      if (audioRef.current) audioRef.current.pause();
+    };
   }, [isPlaying]);
+
   return (
     <nav className={`navbar ${darkMode ? 'navbar-dark' : 'navbar-light'}`}>
-      <div className="container d-flex justify-content-center gap-3">
-        <a href="#conoceme" className="nav-link">
+      <div className="container">
+        {/* Botón hamburguesa a la izquierda solo si está cerrado */}
+        {!isMenuOpen && (
+          <button
+            className="hamburger"
+            onClick={() => setIsMenuOpen(true)}
+            aria-label="Abrir menú"
+          >
+            <FaBars />
+          </button>
+        )}
+
+        {/* Contenedor vacío para mantener el espacio */}
+        <div className="flex-grow-1"></div>
+
+        {/* Botón cerrar a la derecha solo si el menú está abierto */}
+        {isMenuOpen && (
+          <button
+            className="close-menu"
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="Cerrar menú"
+          >
+            <FaTimes />
+          </button>
+        )}
+      </div>
+
+      {/* Menú lateral */}
+      <div className={`nav-links mobile-menu ${isMenuOpen ? 'active' : ''}`}>
+        <a
+          href="#conoceme"
+          className="nav-link"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Conóceme
         </a>
-        <a href="#proyectos" className="nav-link">
+        <a
+          href="#proyectos"
+          className="nav-link"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Proyectos
         </a>
-        <a href="#skills" className="nav-link">
+        <a
+          href="#skills"
+          className="nav-link"
+          onClick={() => setIsMenuOpen(false)}
+        >
           Skills
         </a>
-        <a href="#contacto" className="nav-link">
+        <a
+          href="#contacto"
+          className="nav-link"
+          onClick={() => setIsMenuOpen(false)}
+        >
           ¿Hablamos?
         </a>
-        <a className="nav-link" href="/images/recomendaciones/cv.pdf" download>
+        <a
+          href="/images/recomendaciones/cv.pdf"
+          className="nav-link"
+          download
+          onClick={() => setIsMenuOpen(false)}
+        >
           Descárgate mi CV
         </a>
-
-        <button
-          className="ms-5 bg-transparent border-0 text-white fs-5"
-          onClick={toggleDarkMode}
-        >
-          {darkMode ? <MdSunny /> : <FaMoon />}
-        </button>
-
-        <button
-          onClick={toggleMusic}
-          className="bg-transparent border-0 text-white fs-5"
-        >
-          {isPlaying ? <FaPause /> : <IoMusicalNotes />}
-        </button>
-        <audio ref={audioRef} src="/audio/cancion.mp3" />
+        <div className="buttons-icons  d-flex gap-4">
+          <button className="" onClick={toggleDarkMode}>
+            {darkMode ? <MdSunny /> : <FaMoon />}
+          </button>
+          <button className="" onClick={toggleMusic}>
+            <audio ref={audioRef} src="/audio/cancion.mp3" />
+            {isPlaying ? <FaPause /> : <IoMusicalNotes />}
+          </button>
+        </div>
       </div>
+        {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
     </nav>
+   
   );
 };

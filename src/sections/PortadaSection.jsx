@@ -30,7 +30,7 @@ export const PortadaSection = () => {
             className="azul"
           />
         </svg>
-        <div className="d-flex justify-content-center align-items-center vh-100">
+        <div className="d-flex justify-content-center align-items-center ">
           <div>
             <h1>
               FULL STACK <br /> <span>WEB DEVELOPER</span>

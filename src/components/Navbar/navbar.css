@@ -1,66 +1,137 @@
+/* Navbar base */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   padding: 1rem;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
+  transition: background 0.3s;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0.5rem;
-    font-size: 16px;
-  }
+.navbar.navbar-dark {
+  color: #fff;
+}
+.navbar.navbar-light {
+  background-color: #000000b0;
+  color: #fff;
 }
 
-/* Links dentro del nav */
-.navbar .nav-link {
-  text-align: center;
-  padding-inline: 1rem;
+/* Container */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centra todo en desktop */
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+.close-menu {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  left: 40;
+  font-size: 2rem;
   color: white;
-  text-decoration: none;
+  z-index: 1110;
 }
 
-@media (max-width: 768px) {
-  .navbar .nav-link {
-    padding-inline: 0.5rem;
-    padding-block: 0.25rem;
-    white-space: nowrap;
-  }
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+  margin-left: 2rem;
 }
 
 .navbar .nav-link:hover {
-  color: #ffffff;
+  color: #b09e84;
 }
 
-.navbar.navbar-dark .nav-link {
-  color: #ffffff;
-}
-
-/* Modo claro */
-.navbar.navbar-light {
-  background-color: #000000b0;
-  color: white;
-}
-
-.navbar.navbar-light .nav-link {
-  color: #ffffff;
-}
-
-/* Cursor sobre el botón de toggle */
-.navbar button {
-  cursor: pointer;
+/* Botones */
+button {
+  background: transparent;
+  border: none;
   color: inherit;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
 
+/* Hamburger - móvil */
+.hamburger {
+  display: none;
+}
+
+/* Menú lateral móvil */
 @media (max-width: 768px) {
-  .navbar .container {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.25rem 0.75rem;
+  .navbar {
+    height: 60px;
   }
+  .container {
+    justify-content: center;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 60%;
+    background-color: #111;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 1.5rem;
+    align-items: end;
+
+    z-index: 1100;
+  }
+
+  .buttons-icons {
+    transform: translateX(-100px);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links .nav-link {
+    font-size: 1.2rem;
+    color: #fff;
+    width: 100%;
+    padding-left: 1.5rem;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1110;
+    color: white;
+    font-size: 1.5rem;
+  }
+  .close-menu{
+     font-size: 1.5rem;
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1050;
 }
