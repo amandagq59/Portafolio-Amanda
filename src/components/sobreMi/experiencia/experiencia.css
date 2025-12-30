@@ -1,0 +1,38 @@
+.card-experiencia {
+  background: #ffffff;
+  border-radius: 1.2rem; 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: none;
+ &:hover {
+    transform: scale(1);
+    box-shadow: 0 10px 20px #5a5958;
+  }}
+
+a{
+  color: #555;
+}
+
+.flecha-experiencia{
+  color:#f94a29;
+}
+
+.card-experiencia .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-experiencia .card-title {
+  font-weight: 700;
+  color: #f94a29;
+}
+
+.card-experiencia .card-text {
+  color: #555;
+  line-height: 1.6;
+}
+
+

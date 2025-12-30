@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Lexend Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/lexend:vf@latest/latin-wght-normal.woff2)
+    format('woff2-variations');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: 'Lexend Variable', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo oscuro */
+body.dark-mode .linea-lateral-azul,
+body.dark-mode .linea-lateral-amarillo,
+body.dark-mode .linea-lateral-rosa,
+body.dark-mode .linea-lateral-naranja {
+  background-color: #2dd4bf;
+}
+
+body.dark-mode footer,
+body.dark-mode .navbar {
+  background-color: #0d1324e6;
+}
+
+/* Fondo de la ilustración de portada en modo oscuro */
+body.dark-mode .animate-background {
+  background-color: #0b1220;
+}
+
+body.dark-mode section.section-portada {
+  background-color: transparent;
+}
+
+body.dark-mode section,
+body.dark-mode section.conoceme {
+  background-color: #0f172a;
+  color: #e8ecf5;
+
+  h2 {
+    color: #e8ecf5;
+    text-shadow: none;
+  }
+
+  .buttonColor {
+    background-color: #2dd4bf;
+  }
+  .changeColor {
+    background-color: #1f2937;
+  }
+  .orden {
+    color: #9fb3d6;
+  }
+  .card-formacion-profesional::before,
+  .card-formacion-profesional-end::before {
+    background: none;
+  }
+  .span4 {
+    color: #9fb3d6;
+  }
+  .text-number,
+  .text-color,
+  a {
+    color: #dce7ff;
+  }
+}
+body.dark-mode .card-experiencia .card-title,
+body.dark-mode .flecha-experiencia {
+  color: #e8ecf5;
+}
+
+.dark-mode .section-portada svg .naranja {
+  fill: #fdba74;
+}
+.dark-mode .section-portada svg .amarillo {
+  fill: #fde047;
+}
+.dark-mode .section-portada svg .rosa {
+  fill: #d8b4fe;
+}
+.dark-mode .section-portada svg .azul {
+  fill: #7dd3fc;
+}
+
+/* Portada (modo claro) */
+.section-portada svg .naranja {
+  fill: #f94a29;
+}
+.section-portada svg .amarillo {
+  fill: #fce22a;
+}
+.section-portada svg .rosa {
+  fill: #d61355;
+}
+.section-portada svg .azul {
+  fill: #30e3df;
+}
+
+.dark-mode .card-formacion-profesional,
+.dark-mode .card-experiencia,
+.dark-mode .card-experienciaIndv,
+.dark-mode .habilidades,
+.dark-mode .cualidades {
+  background-color: #18233a;
+  color: #e8ecf5;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.dark-mode .project-card,
+.dark-mode .project-card .card-body {
+  background-color: #1b253b;
+  color: #e8ecf5;
+
+  .dark-mode .project-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.dark-mode .project-card .project-title,
+.dark-mode .project-card .project-subtitle,
+.dark-mode .project-card .project-description,
+.dark-mode .project-card .project-features li {
+  color: #dfe7f4;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+  background-color: #2dd4bf;
+  color: #0b1220;
+}
+
+/* Inputs en modo oscuro */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode .form-control {
+  background-color: #111827;
+  color: #e5e7eb;
+  border: 1px solid #334155;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: #9ca3af;
+}

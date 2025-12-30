@@ -1,0 +1,66 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+}
+
+/* Links dentro del nav */
+.navbar .nav-link {
+  text-align: center;
+  padding-inline: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+    white-space: nowrap;
+  }
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar.navbar-dark .nav-link {
+  color: #ffffff;
+}
+
+/* Modo claro */
+.navbar.navbar-light {
+  background-color: #000000b0;
+  color: white;
+}
+
+.navbar.navbar-light .nav-link {
+  color: #ffffff;
+}
+
+/* Cursor sobre el botón de toggle */
+.navbar button {
+  cursor: pointer;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.75rem;
+  }
+}

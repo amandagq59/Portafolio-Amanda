@@ -1,0 +1,129 @@
+.section-portada {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    letter-spacing: 10px;
+    font-weight: 700;
+    line-height: 60px;
+    text-shadow: 2px 2px 4px grey;
+    text-align: center;
+  }
+  span {
+    font-size: 50px;
+  }
+
+  h2 {
+    transform: translate(150px, -100px);
+    font-style: oblique;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+    font-weight: 700;
+    color: rgb(86, 82, 82);
+    display: inline-block;
+    position: relative;
+    animation: moverDerecha 2s;
+  }
+}
+
+@keyframes moverDerecha {
+  0% {
+    right: 900px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+.animate-background {
+  background-color: #f6e6c2;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+.amarillo {
+  animation: girarIzquierda 40s linear infinite;
+  transform-origin: 13px 25px;
+}
+.naranja {
+  animation: girarDerecha 20s linear infinite;
+  transform-origin: 13px 25px;
+}
+
+.rosa {
+  animation: girarIzquierda 25s linear infinite;
+  transform-origin: 84px 93px;
+}
+.azul {
+  animation: girarDerecha 35s linear infinite;
+  transform-origin: 84px 93px;
+}
+
+@keyframes girarIzquierda {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes girarDerecha {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-portada {
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .section-portada > .d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+  }
+
+  .section-portada svg.animate-background {
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .section-portada h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .section-portada h1 span {
+    font-size: 2rem;
+    display: block;
+  }
+
+  .section-portada h2 {
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    transform: none;
+  }
+}

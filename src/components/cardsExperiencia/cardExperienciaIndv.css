@@ -1,0 +1,67 @@
+.card-experienciaIndv {
+  background: #ffffff;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 400px;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: none;
+}
+
+
+.card-experienciaIndv:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15), 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.card-experienciaIndv .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-experienciaIndv .card-title {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.717);
+  font-size: 1.4rem;
+}
+
+.card-experienciaIndv .card-subtitle {
+  color: #6c757d;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.card-experienciaIndv .card-text {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card-experienciaIndv .card-text ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-experienciaIndv .card-text ul li {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+
+.card-experienciaIndv .card-text ul li::before {
+  content: '•';
+  color: #f94a29;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.card-experienciaIndv a {
+  .card-experiencia .card-text {
+    color: rgba(0, 0, 0, 0.717);
+    line-height: 1.6;
+  }
+}
