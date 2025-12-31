@@ -5,14 +5,15 @@ import { Card, Col } from 'react-bootstrap';
 export const CardProgramadora = () => {
   return (
     <section>
+      
       <Card className="card-experienciaIndv">
         <Card.Body>
           <Card.Title>Desarrolladora Full Stack</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
+          <Card.Subtitle className="mb-2">
             IdeaCasa Real Estate
           </Card.Subtitle>
-          <Card.Subtitle className="mb-2 text-muted">3 meses</Card.Subtitle>
-          <Card.Text className="card-text text-muted text-start">
+          <Card.Subtitle className="mb-2">3 meses</Card.Subtitle>
+          <Card.Text className="card-text text-start">
             <ul>
               <li>
                 Utilización de Trello para la gestión y coordinación de tareas

@@ -4,14 +4,12 @@ import { Card } from 'react-bootstrap';
 
 export const CardSupervisora = () => {
   return (
-    <Card className="card-experienciaIndv ms-auto">
+    <Card className="card-experienciaIndv">
       <Card.Body>
         <Card.Title>Supervisora</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Starbucks</Card.Subtitle>
-        <Card.Subtitle className="mb-2 text-muted">
-          3 años y 8 meses
-        </Card.Subtitle>
-        <Card.Text className="card-text text-muted text-start">
+        <Card.Subtitle className="mb-2 ">Starbucks</Card.Subtitle>
+        <Card.Subtitle className="mb-2 ">3 años y 8 meses</Card.Subtitle>
+        <Card.Text className="card-text text-start">
           <ul>
             <li>Supervisión y coordinación del equipo de baristas</li>
             <li>Gestión operativa de turnos</li>

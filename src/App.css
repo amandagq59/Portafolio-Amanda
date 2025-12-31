@@ -33,6 +33,79 @@ body.dark-mode .animate-background {
   background-color: #0b1220;
 }
 
+body.dark-mode section,
+body.dark-mode section.conoceme {
+  background-color: #0f172a;
+  color: #e8ecf5;
+}
+
+/* Títulos */
+body.dark-mode section h2 {
+  color: rgb(77, 105, 79);
+}
+
+/* Cards formación */
+body.dark-mode .card-formacion-profesional,
+body.dark-mode .card-formacion-profesional * {
+  color: #e8ecf5 !important;
+}
+
+body.dark-mode .project-card {
+  background-color: #1b253b;
+  color: #dfe7f4;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+body.dark-mode .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+body.dark-mode .project-card .card-body {
+  background-color: transparent;
+  color: #dfe7f4;
+}
+
+body.dark-mode .project-card .project-title,
+body.dark-mode .project-card .project-subtitle {
+  color: #dfe7f4;
+}
+
+body.dark-mode .project-card .project-description,
+body.dark-mode .project-card .project-features li {
+  color: #dfe7f4;
+}
+
+body.dark-mode .project-card .project-tags span {
+  background-color: rgba(77, 105, 79, 0.35);
+  color: #e8ecf5;
+  border-radius: 6px;
+  padding: 2px 8px;
+  margin: 2px;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+body.dark-mode .project-card .project-links a {
+  color: #9fb3d6;
+}
+
+body.dark-mode .project-card .project-links a:hover {
+  color: #2dd4bf;
+}
+
+body.dark-mode .card-formacion-profesional .orden {
+  color: #9fb3d6 !important;
+}
+
+body.dark-mode .card-formacion-profesional .text-muted {
+  color: #e8ecf5 !important;
+}
+
 body.dark-mode section.section-portada {
   background-color: transparent;
 }
@@ -44,7 +117,6 @@ body.dark-mode section.conoceme {
 
   h2 {
     color: rgb(77, 105, 79);
- 
   }
 
   .buttonColor {
@@ -56,9 +128,9 @@ body.dark-mode section.conoceme {
   .orden {
     color: #9fb3d6;
   }
+
   .card-formacion-profesional::before,
   .card-formacion-profesional-end::before {
-
     background: none;
   }
   .span4 {
@@ -71,8 +143,59 @@ body.dark-mode section.conoceme {
   }
 }
 body.dark-mode .card-experiencia .card-title,
-body.dark-mode .card-experiencia .card-text
+body.dark-mode .card-experiencia .card-text body.dark-mode .flecha-experiencia {
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experiencia {
+  background-color: #18233a;
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experiencia .card-title {
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experiencia .card-text {
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experiencia .card-link {
+  color: #9fb3d6;
+}
+
+body.dark-mode .card-experiencia .card-link:hover {
+  color: #e8ecf5;
+}
+
 body.dark-mode .flecha-experiencia {
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experienciaIndv {
+  background-color: #18233a;
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experienciaIndv .card-title {
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experienciaIndv .card-subtitle {
+  color: #dce7ff;
+}
+
+body.dark-mode .card-experienciaIndv .card-text,
+body.dark-mode .card-experienciaIndv .card-text ul,
+body.dark-mode .card-experienciaIndv .card-text li {
+  color: #e8ecf5;
+}
+
+body.dark-mode .card-experienciaIndv .card-link {
+  color: #9fb3d6;
+}
+
+body.dark-mode .card-experienciaIndv .card-link:hover {
   color: #e8ecf5;
 }
 
@@ -83,11 +206,10 @@ body.dark-mode .flecha-experiencia {
   fill: rgba(77, 105, 79, 0.452);
 }
 .dark-mode .section-portada svg .rosa {
-  fill:  rgba(128, 128, 128, 0.308);
+  fill: rgba(128, 128, 128, 0.308);
 }
 .dark-mode .section-portada svg .azul {
   fill: rgba(77, 105, 79, 0.452);
-
 }
 
 /* Portada (modo claro) */
@@ -118,7 +240,7 @@ body.dark-mode .flecha-experiencia {
 .dark-mode .project-card .card-body {
   background-color: #1b253b;
   color: #e8ecf5;
-  border:none;
+  border: none;
 
   .dark-mode .project-card {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
@@ -132,14 +254,12 @@ body.dark-mode .flecha-experiencia {
   color: #dfe7f4;
 }
 
-
-
 body.dark-mode .btn-outline-primary:hover {
   background-color: #2dd4bf;
   color: #0b1220;
 }
 
-/* Inputs en modo oscuro */
+
 body.dark-mode input,
 body.dark-mode textarea,
 body.dark-mode select,

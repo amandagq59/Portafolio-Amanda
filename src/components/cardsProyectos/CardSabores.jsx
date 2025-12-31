@@ -20,7 +20,7 @@ export const CardSabores = () => {
 
       <p className="project-subtitle">Frontend Project · 2025</p>
 
-      <Card.Text className="project-description text-muted">
+      <Card.Text className="project-description">
         APP para amantes de la comida. Creada durante el bootcamp SocraTech en tan solo dos meses.
       </Card.Text>
 

@@ -19,7 +19,7 @@ export const CardRoman = () => {
           <p className="project-subtitle">Full-Stack Web · 2025</p>
 
           {/* Descripción */}
-          <Card.Text className="project-description text-muted">
+          <Card.Text className="project-description ">
             Portal web para una asesoría de abogados de Málaga.
           </Card.Text>
 
