@@ -5,7 +5,6 @@
 .section-contacto .text-contacto {
   margin-block: 4rem;
 }
-
 .section-contacto .form-contacto {
   padding-inline: 10rem;
   margin-block: 4rem;
@@ -69,15 +68,13 @@
   .section-contacto .text-contacto {
     text-align: center;
     width: 100%;
-    padding-inline: 1rem;
-    margin-block: 2rem;
   }
 
   .section-contacto .form-contacto {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
-    padding-inline: 1rem;
+   padding: 0;
+   margin-block: 1rem;
   }
 
   .section-contacto .icons-contacto .d-flex {

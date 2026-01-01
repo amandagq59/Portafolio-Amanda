@@ -35,7 +35,6 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav className={`navbar ${darkMode ? 'navbar-dark' : 'navbar-light'}`}>
       <div className="container">
-        {/* Botón hamburguesa a la izquierda solo si está cerrado */}
         {!isMenuOpen && (
           <button
             className="hamburger"

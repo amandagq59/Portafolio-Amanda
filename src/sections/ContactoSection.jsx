@@ -86,12 +86,13 @@ export const ContactoSection = () => {
               </p>
             </div>
 
-            <div className="icons-contacto d-flex flex-column ms-ms-lg-5">
+            <div className="icons-contacto d-flex flex-column ms-lg-5">
               {/* Linkedin */}
-              <div className="d-flex mb-3 align-items-start">
+              <div className="d-flex mb-3 align-items-start ">
                 <span className="span1 me-2">
                   <FaLinkedin />
                 </span>
+
                 <div className="mt-3">
                   <p>
                     Linkedin: <br />
@@ -127,8 +128,8 @@ export const ContactoSection = () => {
               </div>
 
               {/* Teléfono */}
-              <div className="d-flex mb-3 align-items-start">
-                <span className=" span3 me-2">
+              <div className="d-flex mb-3 align-items-star">
+                <span className="span3 me-2">
                   <FaPhoneSquareAlt />
                 </span>
                 <div className="mt-3">
@@ -147,9 +148,10 @@ export const ContactoSection = () => {
 
               {/* Github */}
               <div className="d-flex mb-3 align-items-start">
-                <span className=" me-2">
+                <span className="me-2">
                   <FaGithubSquare />
                 </span>
+
                 <div className="mt-3">
                   <p>
                     Github: <br />
