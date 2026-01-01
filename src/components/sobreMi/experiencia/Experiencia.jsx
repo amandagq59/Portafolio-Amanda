@@ -39,9 +39,9 @@ export const Experiencia = () => {
             <Card.Body>
               <Card.Title>Programadora</Card.Title>
               <Card.Text className="card-text text-start">
-                El inicio de una nueva etapa profesional, asumida como una
+                El inicio de una nueva etapa profesional, una
                 oportunidad para aprender, aportar valor y crecer de forma
-                constante
+                constante.
               </Card.Text>
               <Card.Link onClick={() => changeSeleccion(1)}>
                 {seleccion === 1 ? 'Ocultar experiencias' : 'Ver experiencias'}

@@ -77,7 +77,7 @@ export const ContactoSection = () => {
         <div className="row">
           {/* Información de contacto */}
           <div className="col-lg-6 col-md-12 mb-4">
-            <div className="text-contacto mb-4">
+            <div className="text-contacto mb-4 ms-lg-5">
               <p>
                 ¡Gracias por visitar mi portafolio! <br />
                 Si quieres contactarme, ya sea por oportunidades laborales,
@@ -86,7 +86,7 @@ export const ContactoSection = () => {
               </p>
             </div>
 
-            <div className="icons-contacto d-flex flex-column">
+            <div className="icons-contacto d-flex flex-column ms-ms-lg-5">
               {/* Linkedin */}
               <div className="d-flex mb-3 align-items-start">
                 <span className="span1 me-2">
@@ -96,6 +96,7 @@ export const ContactoSection = () => {
                   <p>
                     Linkedin: <br />
                     <a
+                      className="a-color"
                       href="https://www.linkedin.com/in/amanda-g%C3%B3mez-quero/"
                       target="_blank"
                       rel="noreferrer"
@@ -114,7 +115,11 @@ export const ContactoSection = () => {
                 <div className="mt-3">
                   <p>
                     Correo electrónico: <br />
-                    <a href="mailto:amanda1758@gmail.com">
+                    <a
+                      className="a-color"
+                      href="https://mail.google.com/mail/?view=cm&to=amanda1758@gmail.com&su=Consulta&body=Hola Amanda, he visto tu portafolio"
+                      target="_blank"
+                    >
                       amanda1758@gmail.com
                     </a>
                   </p>
@@ -178,7 +183,7 @@ export const ContactoSection = () => {
               </Form.Group>
 
               <Form.Group className="mb-4" controlId="formEmail">
-                <Form.Label className="fw-semibold">Email</Form.Label>
+                <Form.Label className=" fw-semibold">Email</Form.Label>
                 <Form.Control
                   type="email"
                   placeholder="tu@email.com"
@@ -210,7 +215,7 @@ export const ContactoSection = () => {
                   </p>
                 )}
                 <button
-                className='button-enviar'
+                  className="button-enviar"
                   size="lg"
                   type="submit"
                   disabled={!isFormValid || sending}

@@ -84,7 +84,7 @@
 @media (max-width: 768px) {
   .section-portada {
     width: 100%;
-    height: 350px;
+    height: 330px;
     text-align: center;
   }
 
@@ -120,10 +120,15 @@
     display: block;
   }
 
-  .section-portada h2 {
-    font-size: 2rem;
-    display: block;
+   .section-portada h2 {
+      transform: none !important;
+    animation: none !important;
+    font-size: 2rem !important;
     text-align: center;
-    transform: translate(0, -70px);
   }
+
+  
+
+
+
 }

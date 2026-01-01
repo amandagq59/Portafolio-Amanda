@@ -120,7 +120,7 @@ export const CardEducadoraSocial = () => {
                 </ul>
 
                 <a
-                  className="d-flex justify-content-end"
+                  className="d-flex justify-content-end mt-4"
                   href={exp.pdf}
                   download
                 >

@@ -1,5 +1,5 @@
 .section-proyectos {
-  background-color:#fafafa;
+  background-color: #fafafa;
 
   .linea-lateral-amarillo {
     width: min(1140px, 100%);
@@ -32,7 +32,7 @@
     margin: 0;
   }
 
-  strong{
+  strong {
     font-size: 15px;
   }
   .project-badge {
@@ -132,6 +132,10 @@
   @media (max-width: 768px) {
     .linea-lateral-amarillo {
       border-bottom-left-radius: 0;
+    }
+
+    .project-card {
+      margin-inline: 0.5rem;
     }
   }
 }
