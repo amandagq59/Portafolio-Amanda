@@ -35,6 +35,7 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav className={`navbar ${darkMode ? 'navbar-dark' : 'navbar-light'}`}>
       <div className="container">
+        {/* Botón hamburguesa a la izquierda solo si está cerrado */}
         {!isMenuOpen && (
           <button
             className="hamburger"
@@ -98,7 +99,7 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
         >
           Descárgate mi CV
         </a>
-        <div className="buttons-icons  d-flex gap-4">
+        <div className="buttons-icons d-flex gap-4">
           <button className="" onClick={toggleDarkMode}>
             {darkMode ? <MdSunny /> : <FaMoon />}
           </button>

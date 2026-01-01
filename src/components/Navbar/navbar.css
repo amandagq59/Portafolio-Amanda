@@ -20,6 +20,9 @@
   color: #fff;
 }
 
+.buttons-icons{
+  transform: translate(100px);
+}
 /* Container */
 .navbar .container {
   display: flex;
@@ -73,7 +76,7 @@ button {
 }
 
 /* Menú lateral móvil */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar {
     height: 60px;
   }
