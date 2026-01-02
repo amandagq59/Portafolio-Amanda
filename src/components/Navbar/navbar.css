@@ -100,16 +100,13 @@ button {
 .close-menu {
   display: block;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
+  left: 180px;
   font-size: 2rem;
   color: white;
   z-index: 1110;
 }
 
-/* ===================== */
-/* ===== RESPONSIVE ==== */
-/* ===================== */
+
 
 @media (max-width: 900px) {
   .navbar {
