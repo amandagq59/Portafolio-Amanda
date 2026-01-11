@@ -7,7 +7,7 @@ import { IoMusicalNotes } from 'react-icons/io5';
 export const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(() => {
-    return localStorage.getItem('isPlaying') === 'true';
+    return localStorage.getItem('isPlaying') === 'true'
   });
 
   const audioRef = useRef(null);
