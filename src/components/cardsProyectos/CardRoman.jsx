@@ -28,6 +28,20 @@ export const CardRoman = () => {
               EN ELABORACIÓN · PRÓXIMAMENTE 
             </strong>
           </p>
+               <a
+              href="https://github.com/amandagq59/Rozas-Roman.git"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub ↗
+            </a>
+
+            <a
+              href="https://www.rozasroman.com/"
+              target="_blank"
+            >
+              Web ↗
+            </a>
 
           <div className="mt-auto d-flex align-items-center gap-2 text-warning">
             <FaHourglassHalf />    <FaHourglassHalf /> <FaHourglassHalf />
