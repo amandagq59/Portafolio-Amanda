@@ -27,7 +27,7 @@ export const CardRoman = () => {
               EN ELABORACIÓN · PRÓXIMAMENTE <FaHourglassHalf />
             </strong>
           </p>
-          <div className="project-links mt-auto">
+          <div className="project-links mt-3">
             <a
               href="https://github.com/amandagq59/Rozas-Roman.git"
               target="_blank"
