@@ -26,6 +26,9 @@ export const CardRoman = () => {
               EN ELABORACIÓN · PRÓXIMAMENTE
             </strong>
           </p>
+          <div className="mt-auto d-flex align-items-center gap-2 text-warning">
+            <FaHourglassHalf /> <FaHourglassHalf /> <FaHourglassHalf />
+          </div>
           <div className="project-links mt-auto">
             <a
               href="https://github.com/amandagq59/Rozas-Roman.git"
@@ -37,9 +40,6 @@ export const CardRoman = () => {
             <a href="https://www.rozasroman.com/" target="_blank">
               Web ↗
             </a>
-          </div>
-          <div className="mt-auto d-flex align-items-center gap-2 text-warning">
-            <FaHourglassHalf /> <FaHourglassHalf /> <FaHourglassHalf />
           </div>
         </Card.Body>
       </Card>
