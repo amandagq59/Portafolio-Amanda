@@ -5,7 +5,6 @@ export const CardSabores = () => {
   return (
 <Col lg={4} md={6} className="mb-4">
   <Card className="h-100 project-card">
-    {/* Imagen ajustada automáticamente al ancho de la card */}
     <Card.Img 
       variant="top" 
       src="./images/proyectos/sabores.jpg" 

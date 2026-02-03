@@ -6,11 +6,10 @@ export const CardRoman = () => {
   return (
     <Col lg={4} md={6} className="mb-4">
       <Card className="project-card h-100">
-         <div className="project-image-wrapper">
-      <img src="./images/proyectos/roman.jpg" alt="" />
-    </div>
+        <div className="project-image-wrapper">
+          <img src="./images/proyectos/roman.jpg" alt="" />
+        </div>
         <Card.Body className="d-flex flex-column">
-          {/* Header */}
           <div className="d-flex justify-content-between align-items-start mb-3">
             <Card.Title className="project-title">Rozas&Roman</Card.Title>
             <span className="project-badge">WEB APP</span>
@@ -18,33 +17,29 @@ export const CardRoman = () => {
 
           <p className="project-subtitle">Full-Stack Web · 2025</p>
 
-          {/* Descripción */}
           <Card.Text className="project-description ">
             Portal web para una asesoría de abogados de Málaga.
           </Card.Text>
 
           <p className="project-status mb-2">
             <strong className="text-warning">
-              EN ELABORACIÓN · PRÓXIMAMENTE 
+              EN ELABORACIÓN · PRÓXIMAMENTE
             </strong>
           </p>
-               <a
+          <div className="project-links mt-auto">
+            <a
               href="https://github.com/amandagq59/Rozas-Roman.git"
               target="_blank"
               rel="noreferrer"
             >
               GitHub ↗
             </a>
-
-            <a
-              href="https://www.rozasroman.com/"
-              target="_blank"
-            >
+            <a href="https://www.rozasroman.com/" target="_blank">
               Web ↗
             </a>
-
+          </div>
           <div className="mt-auto d-flex align-items-center gap-2 text-warning">
-            <FaHourglassHalf />    <FaHourglassHalf /> <FaHourglassHalf />
+            <FaHourglassHalf /> <FaHourglassHalf /> <FaHourglassHalf />
           </div>
         </Card.Body>
       </Card>

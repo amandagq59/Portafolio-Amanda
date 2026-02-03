@@ -7,7 +7,7 @@ import { IoMusicalNotes } from 'react-icons/io5';
 export const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(() => {
-    return localStorage.getItem('isPlaying') === 'true'
+    return localStorage.getItem('isPlaying') === 'true';
   });
 
   const audioRef = useRef(null);
@@ -37,9 +37,7 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <nav className={`navbar ${darkMode ? 'navbar-dark' : 'navbar-light'}`}>
-      {/* Barra superior */}
       <div className="container navbar-top">
-        {/* Hamburguesa izquierda */}
         {!isMenuOpen && (
           <button
             className="hamburger"
@@ -50,7 +48,6 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
           </button>
         )}
 
-        {/* Iconos derecha (responsive) */}
         <div className="navbar-icons">
           <button onClick={toggleDarkMode} aria-label="Modo oscuro">
             {darkMode ? <MdSunny /> : <FaMoon />}
@@ -62,7 +59,6 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
           </button>
         </div>
 
-        {/* Cerrar menú */}
         {isMenuOpen && (
           <button
             className="close-menu"
@@ -74,7 +70,6 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
         )}
       </div>
 
-      {/* Menú lateral */}
       <div className={`nav-links mobile-menu ${isMenuOpen ? 'active' : ''}`}>
         <a href="#conoceme" className="nav-link" onClick={closeMenu}>
           Conóceme
@@ -97,7 +92,6 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
           Descárgate mi CV
         </a>
 
-        {/* Iconos dentro del menú (solo desktop si quieres) */}
         <div className="buttons-icons">
           <button onClick={toggleDarkMode}>
             {darkMode ? <MdSunny /> : <FaMoon />}
@@ -108,7 +102,6 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
         </div>
       </div>
 
-      {/* Overlay */}
       {isMenuOpen && <div className="overlay" onClick={closeMenu}></div>}
     </nav>
   );

@@ -19,7 +19,6 @@ export const CardEducadoraSocial = () => {
         'Participación en programas de ocio educativo y deportivo',
         'Intervención socioeducativa directa',
         'Gestión documental y administrativa',
-        
       ],
     },
     {
@@ -64,13 +63,9 @@ export const CardEducadoraSocial = () => {
     const diff = touchStart - touchEnd;
 
     if (diff > 50) {
-      // swipe izquierda
       setCurrent((prev) => (prev + 1) % experiencias.length);
     } else if (diff < -50) {
-      // swipe derecha
-      setCurrent((prev) =>
-        prev === 0 ? experiencias.length - 1 : prev - 1
-      );
+      setCurrent((prev) => (prev === 0 ? experiencias.length - 1 : prev - 1));
     }
 
     setTouchStart(null);
@@ -82,7 +77,6 @@ export const CardEducadoraSocial = () => {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* INDICADORES ARRIBA – MÓVIL */}
       <div className="slider-indicators">
         {experiencias.map((_, i) => (
           <span
@@ -104,13 +98,9 @@ export const CardEducadoraSocial = () => {
             <Card.Body>
               <Card.Title>Educadora Social</Card.Title>
 
-              <Card.Subtitle className="mb-2">
-                {exp.empresa}
-              </Card.Subtitle>
+              <Card.Subtitle className="mb-2">{exp.empresa}</Card.Subtitle>
 
-              <Card.Subtitle className="mb-2">
-                {exp.tiempo}
-              </Card.Subtitle>
+              <Card.Subtitle className="mb-2">{exp.tiempo}</Card.Subtitle>
 
               <Card.Text className="card-text text-start">
                 <ul>
