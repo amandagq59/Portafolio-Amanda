@@ -7,7 +7,7 @@ export const CardIdeaCasa = () => {
     <Col lg={4} md={6} className="mb-4">
       <Card className="project-card h-100">
         <div className="project-image-wrapper">
-          <img src="./images/proyectos/ideacas.jpg" alt="" />
+          <img src="./images/proyectos/ideaCasa.jpg" alt="" />
         </div>
         <Card.Body className="d-flex flex-column">
           <div className="d-flex justify-content-between align-items-start mb-3">
@@ -49,7 +49,7 @@ export const CardIdeaCasa = () => {
               target="_blank"
               rel="noreferrer"
             >
-               GitHub ↗
+              GitHub ↗
             </a>
             <a
               href="https://youtu.be/HFVvMtxjumY"
