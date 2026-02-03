@@ -1,0 +1,23 @@
+.project-card{
+
+.project-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem; /* opcional, para esquinas redondeadas */
+}
+
+.project-image-wrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+.project-image-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+
+}

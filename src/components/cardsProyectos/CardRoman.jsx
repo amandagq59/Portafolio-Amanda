@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 import { FaHourglassHalf } from 'react-icons/fa';
+import './cardProyectos.css';
 
 export const CardRoman = () => {
   return (
@@ -23,12 +24,9 @@ export const CardRoman = () => {
 
           <p className="project-status mb-2">
             <strong className="text-warning">
-              EN ELABORACIÓN · PRÓXIMAMENTE
+              EN ELABORACIÓN · PRÓXIMAMENTE <FaHourglassHalf />
             </strong>
           </p>
-          <div className="mt-auto d-flex align-items-center gap-2 text-warning">
-            <FaHourglassHalf /> <FaHourglassHalf /> <FaHourglassHalf />
-          </div>
           <div className="project-links mt-auto">
             <a
               href="https://github.com/amandagq59/Rozas-Roman.git"

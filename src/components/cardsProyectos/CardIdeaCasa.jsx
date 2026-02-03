@@ -1,12 +1,13 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import './cardProyectos.css';
 
 export const CardIdeaCasa = () => {
   return (
     <Col lg={4} md={6} className="mb-4">
       <Card className="project-card h-100">
         <div className="project-image-wrapper">
-          <img src="./images/proyectos/ideacasa.jpg" alt="" />
+          <img src="./images/proyectos/ideaCasa.jpg" alt="" />
         </div>
         <Card.Body className="d-flex flex-column">
           <div className="d-flex justify-content-between align-items-start mb-3">
