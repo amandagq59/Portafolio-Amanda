@@ -22,18 +22,40 @@ export const CardRoman = () => {
             Portal web para una asesoría de abogados de Málaga.
           </Card.Text>
 
-          <p className="project-status mb-2">
-            <strong className="text-warning">
-              EN ELABORACIÓN · PRÓXIMAMENTE <FaHourglassHalf />
-            </strong>
-          </p>
-          <div className="project-links mt-3">
+          <ul className="project-features">
+            <li>Contacto directo para hablar con la asesoría.</li>
+            <li>Formulario de contacto con validaciones</li>
+            <li>Vista detallada por ID de cada servicio prestado.</li>
+            <li>Optimización SEO de la página web.</li>
+          </ul>
+
+          <div className="project-tags">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Bootstrap</span>
+            <span>Figma</span>
+            <span>Resend</span>
+            <span>Vercel</span>
+          </div>
+
+          <p className='text-danger text-center'>Backend en desarrollo</p>
+
+          <div className="project-links mt-auto">
             <a
-              href="https://github.com/amandagq59/Rozas-Roman.git"
+              href="https://github.com/amandagq59/Asesoria-Rozas-Roman.git"
               target="_blank"
               rel="noreferrer"
             >
               GitHub ↗
+            </a>
+
+            <a
+              href="https://youtu.be/PuMuOGjPmd8?si=fCbcOTDsyDicRefM"
+              target="_blank"
+            >
+              Youtube ↗
             </a>
             <a href="https://www.rozasroman.com/" target="_blank">
               Web ↗

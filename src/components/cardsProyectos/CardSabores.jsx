@@ -17,7 +17,7 @@ export const CardSabores = () => {
             <span className="project-badge">APP</span>
           </div>
 
-          <p className="project-subtitle">Frontend Project · 2025</p>
+          <p className="project-subtitle">Full-Stack Project · 2025</p>
 
           <Card.Text className="project-description">
             APP para amantes de la comida. Creada durante el bootcamp SocraTech

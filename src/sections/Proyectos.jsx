@@ -17,9 +17,10 @@ export const Proyectos = () => {
       <div className="container">
         <Row className="g-4">
           <CardIdeaCasa />
+          <CardRoman />
+
           <CardMeraki />
           <CardSabores />
-          <CardRoman />
         </Row>
       </div>
     </section>

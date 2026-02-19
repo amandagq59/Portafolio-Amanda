@@ -79,13 +79,17 @@
   color: #b09e84;
 }
 
-/* Botones */
+
 button {
   background: transparent;
   border: none;
   color: inherit;
   cursor: pointer;
   font-size: 1.2rem;
+
+ &:hover {
+  color: #b09e84;
+}
 }
 
 /* Hamburger */

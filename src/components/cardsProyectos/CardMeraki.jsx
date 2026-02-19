@@ -19,13 +19,13 @@ export const CardMeraki = () => {
 
           <p className="project-subtitle">Frontend Project · 2025</p>
 
-          {/* Descripción */}
+      
           <Card.Text className="project-description">
             Portal web desarrollado en mis ratos libres. Meraki es una
             aplicación para la gestión y reserva de viajes en grupo.
           </Card.Text>
 
-          {/* Features */}
+        
           <ul className="project-features">
             <li>Mapeo de todos los viajes disponibles</li>
             <li>Vista detallada por ID de cada viaje</li>
@@ -33,7 +33,7 @@ export const CardMeraki = () => {
             <li>Buscador del tiempo por ciudad (Weather API)</li>
           </ul>
 
-          {/* Tecnologías */}
+          
           <div className="project-tags">
             <span>React</span>
             <span>HTML5</span>
@@ -42,7 +42,7 @@ export const CardMeraki = () => {
             <span>Weather API</span>
           </div>
 
-          {/* Links */}
+     
           <div className="project-links mt-auto">
             <a
               href="https://github.com/amandagq59/Meraki.git"
@@ -56,7 +56,7 @@ export const CardMeraki = () => {
               href="https://youtu.be/vY6RCUfzBWo?si=0LtJnIicSDGdPXoO"
               target="_blank"
             >
-              Video ↗
+              Youtube ↗
             </a>
           </div>
         </Card.Body>

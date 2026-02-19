@@ -5,6 +5,7 @@
     background-color: #f94a29;
     border-radius: 16px;
     border: none;
+ 
   }
 
   @keyframes circle-in-bottom-left {
@@ -28,6 +29,9 @@
     background-color: #000000b0;
     border-radius: 16px;
     border: none;
+    &:hover {
+      color: #b09e84;
+    }
   }
 
   @media (max-width: 768px) {
