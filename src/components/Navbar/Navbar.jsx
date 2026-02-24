@@ -84,7 +84,7 @@ export const Navbar = ({ darkMode, toggleDarkMode }) => {
           ¿Hablamos?
         </a>
         <a
-          href="/images/recomendaciones/cv.pdf"
+          href="/images/recomendaciones/CV-Amanda-Gomez-Quero.pdf"
           className="nav-link"
           download
           onClick={closeMenu}
